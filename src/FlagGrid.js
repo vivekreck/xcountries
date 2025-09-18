@@ -45,7 +45,7 @@ const FlagGrid = () => {
                 const data = await response.json();
                 setFlags(data);
             } catch (error) {
-                console.error("Error:", error);
+                console.error("Error fetching data:", error);
             }
         }
         getData();
